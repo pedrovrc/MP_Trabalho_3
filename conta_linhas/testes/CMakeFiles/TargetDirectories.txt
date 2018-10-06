@@ -1,0 +1,3 @@
+/home/pedro/Desktop/Trabalho 3/testes/CMakeFiles/edit_cache.dir
+/home/pedro/Desktop/Trabalho 3/testes/CMakeFiles/rebuild_cache.dir
+/home/pedro/Desktop/Trabalho 3/testes/CMakeFiles/runTests.dir
