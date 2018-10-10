@@ -18,13 +18,17 @@ TEST (checa_vazia, linha_codigo) {
 	fgets(linha, 25, texto);
 	ASSERT_EQ(0, checa_vazia(linha, 25));
 
+	fgets(linha, 25, texto);
+	fgets(linha, 25, texto);
+	ASSERT_EQ(0, checa_vazia(linha, 25));
+
 	fclose(texto);
 }
 
 TEST (checa_vazia, linha_comentario) {
 	FILE* texto = fopen("linha_comentario.txt", "r");
 	char linha[35];
-	
+
 	fgets(linha, 35, texto);
 	ASSERT_EQ(0, checa_vazia(linha, 35));
 
