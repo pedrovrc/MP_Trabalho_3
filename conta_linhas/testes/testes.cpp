@@ -58,7 +58,7 @@ TEST (checa_vazia, linha_comentario) {
 TEST (checa_comentario, linha_vazia) {
 	FILE* texto = fopen("linha_vazia.txt", "r");
 	char linha[35];
-	int flag = 0;
+	bool flag = 0;
 
 	fgets(linha, 35, texto);
 	ASSERT_EQ(0, checa_comentario(linha, 35, &flag));
@@ -69,7 +69,7 @@ TEST (checa_comentario, linha_vazia) {
 TEST (checa_comentario, linha_codigo) {
 	FILE* texto = fopen("linha_codigo.txt", "r");
 	char linha[35];
-	int flag = 0;
+	bool flag = 0;
 
 	fgets(linha, 35, texto);
 	ASSERT_EQ(0, checa_comentario(linha, 35, &flag));
@@ -84,7 +84,7 @@ TEST (checa_comentario, linha_codigo) {
 TEST (checa_comentario, linha_comentario) {
 	FILE* texto = fopen("linha_comentario.txt", "r");
 	char linha[35];
-	int flag = 0;
+	bool flag = 0;
 
 	fgets(linha, 35, texto);	//linha 1
 	ASSERT_EQ(1, checa_comentario(linha, 35, &flag));

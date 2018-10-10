@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <ctype.h>
+#include <stdbool.h>
 #include "conta_linhas.h"
 
 /*
@@ -17,7 +18,8 @@
 
 int conta_linhas_codigo(FILE* codigo) {
     const int buffer = 100;
-    int linhas_codigo = 0, flag_comentario = 0;
+    int linhas_codigo = 0;
+    bool flag_comentario = 0;
     char linha[buffer];
 
     while (fgets(linha, buffer, codigo) != NULL) {
@@ -77,7 +79,7 @@ int checa_vazia(char *linha, const int buffer) {
 // 0 -> nao esta em bloco de comentario.
 // 1 -> esta em bloco de comentario.
 
-int checa_comentario(char *linha, const int buffer, int *flag_comentario) {
+int checa_comentario(char *linha, const int buffer, bool *flag_comentario) {
     int tamanho = tamanho_linha(linha, buffer);
     int contador = 0;
 
@@ -94,7 +96,7 @@ int checa_comentario(char *linha, const int buffer, int *flag_comentario) {
                     case '*':
                         *flag_comentario = 1;
                         return 1;
-                    case '/':
+                   case '/':
                         return 1;
                     default:
                         return 0;
