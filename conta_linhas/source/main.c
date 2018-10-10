@@ -14,8 +14,8 @@
 	fornecido. Então, mostra o resultado na tela, fecha o arquivo e termina.
 */
 
-int main() {
-    FILE* codigo = fopen("amostra1.cpp", "r");
+int main(int argc, char *argv[]) {
+    FILE* codigo = fopen(argv[1], "r");
     int numero_linhas = 0;
 
     if (codigo == NULL) {
