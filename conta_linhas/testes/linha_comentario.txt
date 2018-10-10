@@ -1,9 +1,7 @@
 //comentario generico
 
-/* comentario generico 2 */
-
 /*
 	comentario
 	generico
-	3
+	2
 */
