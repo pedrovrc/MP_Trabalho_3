@@ -3,40 +3,40 @@
 
 TEST (tamanho_linha, linha_vazia) {
 	FILE* texto = fopen("linha_vazia.txt", "r");
-	char linha[25];
+	char linha[35];
 
-	fgets(linha, 25, texto);
-	ASSERT_EQ(0, tamanho_linha(linha, 25));
+	fgets(linha, 35, texto);
+	ASSERT_EQ(0, tamanho_linha(linha, 35));
 }
 
 TEST (tamanho_linha, linha_normal) {
 	FILE* texto = fopen("linha_codigo.txt", "r");
-	char linha[25];
+	char linha[35];
 
-	fgets(linha, 25, texto);
-	ASSERT_EQ(18, tamanho_linha(linha, 25));
+	fgets(linha, 35, texto);
+	ASSERT_EQ(18, tamanho_linha(linha, 35));
 }
 
 TEST (checa_vazia, linha_vazia) {
 	FILE* texto = fopen("linha_vazia.txt", "r");
-	char linha[25];
+	char linha[35];
 
-	fgets(linha, 25, texto);
-	ASSERT_EQ(1, checa_vazia(linha, 25));
+	fgets(linha, 35, texto);
+	ASSERT_EQ(1, checa_vazia(linha, 35));
 
 	fclose(texto);
 }
 
 TEST (checa_vazia, linha_codigo) {
 	FILE* texto = fopen("linha_codigo.txt", "r");
-	char linha[25];
+	char linha[35];
 
-	fgets(linha, 25, texto);
-	ASSERT_EQ(0, checa_vazia(linha, 25));
+	fgets(linha, 35, texto);
+	ASSERT_EQ(0, checa_vazia(linha, 35));
 
-	fgets(linha, 25, texto);
-	fgets(linha, 25, texto);
-	ASSERT_EQ(0, checa_vazia(linha, 25));
+	fgets(linha, 35, texto);
+	fgets(linha, 35, texto);
+	ASSERT_EQ(0, checa_vazia(linha, 35));
 
 	fclose(texto);
 }
@@ -51,6 +51,67 @@ TEST (checa_vazia, linha_comentario) {
 	fgets(linha, 35, texto);
 	fgets(linha, 35, texto);
 	ASSERT_EQ(0, checa_vazia(linha, 35));
+
+	fclose(texto);
+}
+
+TEST (checa_comentario, linha_vazia) {
+	FILE* texto = fopen("linha_vazia.txt", "r");
+	char linha[35];
+
+	fgets(linha, 35, texto);
+	ASSERT_EQ(0, checa_comentario(linha, 35));
+
+	fclose(texto);
+}
+
+TEST (checa_comentario, linha_codigo) {
+	FILE* texto = fopen("linha_codigo.txt", "r");
+	char linha[35];
+
+	fgets(linha, 35, texto);
+	ASSERT_EQ(0, checa_vazia(linha, 35));
+
+	fgets(linha, 35, texto);
+	fgets(linha, 35, texto);
+	ASSERT_EQ(0, checa_vazia(linha, 35));
+
+	fclose(texto);
+}
+
+TEST (checa_comentario, linha_comentario) {
+	FILE* texto = fopen("linha_comentario.txt", "r");
+	char linha[35];
+
+	fgets(linha, 35, texto);
+	ASSERT_EQ(1, checa_comentario(linha, 35));
+
+	fgets(linha, 35, texto);
+	ASSERT_EQ(0, checa_comentario(linha, 35));
+
+	fgets(linha, 35, texto);
+	ASSERT_EQ(1, checa_comentario(linha, 35));
+
+	fgets(linha, 35, texto);
+	ASSERT_EQ(0, checa_comentario(linha, 35));
+
+	fgets(linha, 35, texto);
+	ASSERT_EQ(1, checa_comentario(linha, 35));
+
+	fgets(linha, 35, texto);
+	ASSERT_EQ(1, checa_comentario(linha, 35));
+
+	fgets(linha, 35, texto);
+	ASSERT_EQ(1, checa_comentario(linha, 35));
+
+	fgets(linha, 35, texto);
+	ASSERT_EQ(1, checa_comentario(linha, 35));
+
+	fgets(linha, 35, texto);
+	ASSERT_EQ(1, checa_comentario(linha, 35));
+
+	fgets(linha, 35, texto);
+	ASSERT_EQ(0, checa_comentario(linha, 35));
 
 	fclose(texto);
 }

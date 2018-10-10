@@ -10,7 +10,7 @@ int conta_linhas_codigo(FILE* codigo) {
 	while (fgets(linha, buffer, codigo) != NULL) {
 		if (checa_vazia(linha, buffer) == 1) {
 			continue;
-		} else if (checa_comentario() == 1) {
+		} else if (checa_comentario(linha, buffer) == 1) {
 			continue;
 		} else {
 			linhas_codigo++;
@@ -31,8 +31,14 @@ int checa_vazia(char *linha, const int buffer) {
 	return 1;
 }
 
-int checa_comentario() {
-	return 0;
+int checa_comentario(char *linha, const int buffer) {
+	int tamanho = tamanho_linha(linha, buffer);
+
+	//2 casos:
+	//caso 0: nao esta em comentario, checa-se por entrada em comentario (/* ou //)
+	//caso 1: esta em comentario, checa-se por saida de comentario (*/)
+	//->precisa de uma flag.
+
 }
 
 int tamanho_linha(char *linha, const int buffer) {
