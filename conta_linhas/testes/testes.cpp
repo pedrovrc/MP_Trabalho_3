@@ -4,6 +4,7 @@
 TEST(conta_linhas_codigo, teste_geral_1) {
 	FILE* codigo = fopen("amostra1.cpp", "r");
 	ASSERT_EQ(36, conta_linhas_codigo(codigo));
+	//contar todas as linhas
 }
 
 int main(int argc, char **argv) {
