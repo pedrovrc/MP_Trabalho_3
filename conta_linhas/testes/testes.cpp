@@ -3,7 +3,7 @@
 
 TEST(conta_linhas_codigo, teste_geral_1) {
 	FILE* codigo = fopen("amostra1.cpp", "r");
-	ASSERT_EQ(0, conta_linhas_codigo(codigo));
+	ASSERT_EQ(36, conta_linhas_codigo(codigo));
 }
 
 int main(int argc, char **argv) {
