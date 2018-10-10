@@ -4,7 +4,7 @@
 
 int conta_linhas_codigo(FILE* codigo) {
 	const int buffer = 100;
-	int conta_codigo = 0;
+	int linhas_codigo = 0;
 	char linha[buffer];
 
 	while (fgets(linha, buffer, codigo) != NULL) {
@@ -13,18 +13,14 @@ int conta_linhas_codigo(FILE* codigo) {
 		} else if (checa_comentario() == 1) {
 			continue;
 		} else {
-			conta_codigo++;
+			linhas_codigo++;
 		}
 	}
-	return conta_codigo;
+	return linhas_codigo;
 }
 
 int checa_vazia(char *linha, const int buffer) {
-	int tamanho = 0;
-
-	while (linha[tamanho] != '\n' && tamanho < buffer) {
-		tamanho++;
-	}
+	int tamanho = tamanho_linha(linha, buffer);
 
 	for (int i = 0; i < tamanho; i++) {
 		if (!isspace(linha[i])) {
@@ -37,4 +33,13 @@ int checa_vazia(char *linha, const int buffer) {
 
 int checa_comentario() {
 	return 0;
+}
+
+int tamanho_linha(char *linha, const int buffer) {
+	int tamanho = 0;
+
+	while (linha[tamanho] != '\n' && tamanho < buffer) {
+		tamanho++;
+	}
+	return tamanho;
 }
