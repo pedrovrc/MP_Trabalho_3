@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/pedro/Desktop/Trabalho 3/testes"
+CMAKE_SOURCE_DIR = "/home/pedro/Área de Trabalho/conta_linhas/testes"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/pedro/Desktop/Trabalho 3/testes"
+CMAKE_BINARY_DIR = "/home/pedro/Área de Trabalho/conta_linhas/testes"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/runTests.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/runTests.dir/flags.make
 
 CMakeFiles/runTests.dir/testes.cpp.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/testes.cpp.o: testes.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pedro/Desktop/Trabalho 3/testes/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/runTests.dir/testes.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/testes.cpp.o -c "/home/pedro/Desktop/Trabalho 3/testes/testes.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pedro/Área de Trabalho/conta_linhas/testes/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/runTests.dir/testes.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/testes.cpp.o -c "/home/pedro/Área de Trabalho/conta_linhas/testes/testes.cpp"
 
 CMakeFiles/runTests.dir/testes.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/testes.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pedro/Desktop/Trabalho 3/testes/testes.cpp" > CMakeFiles/runTests.dir/testes.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pedro/Área de Trabalho/conta_linhas/testes/testes.cpp" > CMakeFiles/runTests.dir/testes.cpp.i
 
 CMakeFiles/runTests.dir/testes.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/testes.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pedro/Desktop/Trabalho 3/testes/testes.cpp" -o CMakeFiles/runTests.dir/testes.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pedro/Área de Trabalho/conta_linhas/testes/testes.cpp" -o CMakeFiles/runTests.dir/testes.cpp.s
 
 CMakeFiles/runTests.dir/testes.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/runTests.dir/testes.cpp.o.provides.build: CMakeFiles/runTests.dir/tes
 
 CMakeFiles/runTests.dir/conta_linhas.c.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/conta_linhas.c.o: conta_linhas.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pedro/Desktop/Trabalho 3/testes/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/runTests.dir/conta_linhas.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/runTests.dir/conta_linhas.c.o   -c "/home/pedro/Desktop/Trabalho 3/testes/conta_linhas.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pedro/Área de Trabalho/conta_linhas/testes/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/runTests.dir/conta_linhas.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/runTests.dir/conta_linhas.c.o   -c "/home/pedro/Área de Trabalho/conta_linhas/testes/conta_linhas.c"
 
 CMakeFiles/runTests.dir/conta_linhas.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/runTests.dir/conta_linhas.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/pedro/Desktop/Trabalho 3/testes/conta_linhas.c" > CMakeFiles/runTests.dir/conta_linhas.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/pedro/Área de Trabalho/conta_linhas/testes/conta_linhas.c" > CMakeFiles/runTests.dir/conta_linhas.c.i
 
 CMakeFiles/runTests.dir/conta_linhas.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/runTests.dir/conta_linhas.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/pedro/Desktop/Trabalho 3/testes/conta_linhas.c" -o CMakeFiles/runTests.dir/conta_linhas.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/pedro/Área de Trabalho/conta_linhas/testes/conta_linhas.c" -o CMakeFiles/runTests.dir/conta_linhas.c.s
 
 CMakeFiles/runTests.dir/conta_linhas.c.o.requires:
 
@@ -118,7 +118,7 @@ runTests: CMakeFiles/runTests.dir/conta_linhas.c.o
 runTests: CMakeFiles/runTests.dir/build.make
 runTests: /usr/lib/libgtest.a
 runTests: CMakeFiles/runTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/pedro/Desktop/Trabalho 3/testes/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable runTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/pedro/Área de Trabalho/conta_linhas/testes/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable runTests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/runTests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -136,6 +136,6 @@ CMakeFiles/runTests.dir/clean:
 .PHONY : CMakeFiles/runTests.dir/clean
 
 CMakeFiles/runTests.dir/depend:
-	cd "/home/pedro/Desktop/Trabalho 3/testes" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/pedro/Desktop/Trabalho 3/testes" "/home/pedro/Desktop/Trabalho 3/testes" "/home/pedro/Desktop/Trabalho 3/testes" "/home/pedro/Desktop/Trabalho 3/testes" "/home/pedro/Desktop/Trabalho 3/testes/CMakeFiles/runTests.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/home/pedro/Área de Trabalho/conta_linhas/testes" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/pedro/Área de Trabalho/conta_linhas/testes" "/home/pedro/Área de Trabalho/conta_linhas/testes" "/home/pedro/Área de Trabalho/conta_linhas/testes" "/home/pedro/Área de Trabalho/conta_linhas/testes" "/home/pedro/Área de Trabalho/conta_linhas/testes/CMakeFiles/runTests.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/runTests.dir/depend
 

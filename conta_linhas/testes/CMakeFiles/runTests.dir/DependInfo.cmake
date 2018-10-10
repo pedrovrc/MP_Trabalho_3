@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/pedro/Desktop/Trabalho 3/testes/conta_linhas.c" "/home/pedro/Desktop/Trabalho 3/testes/CMakeFiles/runTests.dir/conta_linhas.c.o"
+  "/home/pedro/Área de Trabalho/conta_linhas/testes/conta_linhas.c" "/home/pedro/Área de Trabalho/conta_linhas/testes/CMakeFiles/runTests.dir/conta_linhas.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -13,7 +13,7 @@ set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_C_TARGET_INCLUDE_PATH
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pedro/Desktop/Trabalho 3/testes/testes.cpp" "/home/pedro/Desktop/Trabalho 3/testes/CMakeFiles/runTests.dir/testes.cpp.o"
+  "/home/pedro/Área de Trabalho/conta_linhas/testes/testes.cpp" "/home/pedro/Área de Trabalho/conta_linhas/testes/CMakeFiles/runTests.dir/testes.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

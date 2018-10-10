@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pedro/Área de Trabalho/conta_linhas/testes/conta_linhas.c
+stdio.h
+-
+ctype.h
+-
+conta_linhas.h
+/home/pedro/Área de Trabalho/conta_linhas/testes/conta_linhas.h
+
+/home/pedro/Área de Trabalho/conta_linhas/testes/conta_linhas.h
+stdio.h
+-
+
+/home/pedro/Área de Trabalho/conta_linhas/testes/testes.cpp
+conta_linhas.c
+/home/pedro/Área de Trabalho/conta_linhas/testes/conta_linhas.c
+gtest/gtest.h
+-
+
