@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/runTests.dir/testes.cpp.o CMakeFiles/runTests.dir/conta_linhas.c.o  -o runTests -rdynamic -Wl,-Bstatic -lgtest -Wl,-Bdynamic -lpthread 
