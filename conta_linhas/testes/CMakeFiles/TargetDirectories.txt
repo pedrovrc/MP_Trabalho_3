@@ -1,3 +1,0 @@
-/home/pedro/Área de Trabalho/conta_linhas/testes/CMakeFiles/edit_cache.dir
-/home/pedro/Área de Trabalho/conta_linhas/testes/CMakeFiles/rebuild_cache.dir
-/home/pedro/Área de Trabalho/conta_linhas/testes/CMakeFiles/runTests.dir
